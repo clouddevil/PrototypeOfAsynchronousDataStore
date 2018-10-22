@@ -2,6 +2,7 @@ PODS:
   - PromisesObjC (1.0.8)
   - PromisesSwift (1.0.8):
     - PromisesObjC (= 1.0.8)
+  - RamblerAppDelegateProxy (0.0.5)
   - Typhoon (4.0.7):
     - Typhoon/DeallocNotifier (= 4.0.7)
     - Typhoon/IntrospectionUtils (= 4.0.7)
@@ -13,19 +14,22 @@ PODS:
 
 DEPENDENCIES:
   - PromisesSwift (~> 1.0.6)
+  - RamblerAppDelegateProxy
   - Typhoon
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PromisesObjC
     - PromisesSwift
+    - RamblerAppDelegateProxy
     - Typhoon
 
 SPEC CHECKSUMS:
   PromisesObjC: 51435f4ea6fb4ad2f1684cd59aeda60f3c274f4a
   PromisesSwift: 3e2db3a3bee4c7df64ebac32541cd69d4a47c6a3
+  RamblerAppDelegateProxy: 9e90d7bd1406865918538b4c720fa0977b848a1b
   Typhoon: f89030797a7c8a23ee85aa7c7dbdfd2e5d8a8471
 
-PODFILE CHECKSUM: bca89fc82036ae13df595341e5ece5c7027d5e81
+PODFILE CHECKSUM: b2e7277f04e8f9fb0b439392c88e5e290d3c1734
 
 COCOAPODS: 1.5.3
