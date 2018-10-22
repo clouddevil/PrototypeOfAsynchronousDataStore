@@ -11,10 +11,20 @@ import UIKit
 class ApplesModuleModuleInitializer: NSObject {
 
     //Connect with object on storyboard
-    @IBOutlet weak var applesmoduleViewController: ApplesModuleViewController!
+    var applesmoduleViewController: ApplesModuleViewController!
 
     override func awakeFromNib() {
 
+        let configurator = ApplesModuleModuleConfigurator()
+        configurator.configureModuleForViewInput(viewInput: applesmoduleViewController)
+    }
+    
+    
+    func load()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        applesmoduleViewController = storyboard.instantiateViewController(withIdentifier :"mainController") as! ApplesModuleViewController
+        
         let configurator = ApplesModuleModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: applesmoduleViewController)
     }

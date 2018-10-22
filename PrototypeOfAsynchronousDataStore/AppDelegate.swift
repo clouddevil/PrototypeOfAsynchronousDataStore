@@ -21,10 +21,13 @@ func sleepThread(time: Int) {
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var configurator: ApplesModuleModuleInitializer! = ApplesModuleModuleInitializer()
    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        self.configurator.load()
         return true
     }
 
