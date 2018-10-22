@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A19E51765B652C9338D80B /* ApplesModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636CF11D97E2181CEA00240 /* ApplesModuleInteractorInput.swift */; };
+		1967310E5FB465D734B85C33 /* ApplesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D830F913BA0A919D30FD65 /* ApplesModulePresenter.swift */; };
+		34B04C6AB39EBBBBA8F0EF5A /* ApplesModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F1BA494C00526695AB3D3 /* ApplesModuleViewOutput.swift */; };
+		39CD23FD46D26DD39F995E24 /* ApplesModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */; };
+		4BD489396A20CA2971A6BCC9 /* ApplesModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38816CB856813E02D4847B7B /* ApplesModuleInitializer.swift */; };
+		6160AED6405A9C43EC112709 /* ApplesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83FBCA939121B1ACFBF39C /* ApplesModuleRouter.swift */; };
+		6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDEFC5310EC9DCAE75CCD7 /* ApplesModuleViewInput.swift */; };
+		774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */; };
 		8B31CE30B8B116BC4E9A5BEF /* Pods_PrototypeOfAsynchronousDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */; };
+		966B07CC217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */; };
+		C818FE0B618A8FAF87BF7981 /* ApplesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */; };
 		CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */; };
 		CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27D2152E7FE002D8B35 /* AppDelegate.swift */; };
 		CE13C2802152E7FE002D8B35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27F2152E7FE002D8B35 /* ViewController.swift */; };
@@ -21,10 +31,34 @@
 		CED276BA2152EC4C0008F912 /* NetworkStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED276B92152EC4C0008F912 /* NetworkStorage.swift */; };
 		CED276BC2152F31F0008F912 /* ApplesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED276BB2152F31F0008F912 /* ApplesCollection.swift */; };
 		CEFD319D215A007E00CC850D /* ApplesCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD319C215A007E00CC850D /* ApplesCreator.swift */; };
+		E8AF5DB37DE992599DAA528B /* ApplesModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297A61F25F5F7424C661387 /* ApplesModuleRouterInput.swift */; };
+		F3F02F51F1DD5782506A9D27 /* ApplesModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613AE0B480004758151808A /* ApplesModuleInteractorOutput.swift */; };
+		FF7770A1CA5B05132909F26F /* ApplesModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63766BEA1D2242188FDC426F /* ApplesModuleInteractor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		966B07CE217E110700EE3363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE13C2722152E7FE002D8B35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE13C2792152E7FE002D8B35;
+			remoteInfo = PrototypeOfAsynchronousDataStore;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2B7F1BA494C00526695AB3D3 /* ApplesModuleViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleViewOutput.swift; sourceTree = "<group>"; };
+		2B83FBCA939121B1ACFBF39C /* ApplesModuleRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleRouter.swift; sourceTree = "<group>"; };
+		38816CB856813E02D4847B7B /* ApplesModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInitializer.swift; sourceTree = "<group>"; };
 		45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrototypeOfAsynchronousDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleModuleInput.swift; sourceTree = "<group>"; };
+		63766BEA1D2242188FDC426F /* ApplesModuleInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractor.swift; sourceTree = "<group>"; };
+		966B07C9217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeOfAsynchronousDataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeOfAsynchronousDataStoreTests.swift; sourceTree = "<group>"; };
+		966B07CD217E110700EE3363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleViewController.swift; sourceTree = "<group>"; };
+		A7D830F913BA0A919D30FD65 /* ApplesModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModulePresenter.swift; sourceTree = "<group>"; };
+		C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleConfigurator.swift; sourceTree = "<group>"; };
 		C6AA40CE5857CA4FE0FC6DC8 /* Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrototypeOfAsynchronousDataStore/Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig"; sourceTree = "<group>"; };
 		CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE13C27A2152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrototypeOfAsynchronousDataStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +75,21 @@
 		CED276B92152EC4C0008F912 /* NetworkStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStorage.swift; sourceTree = "<group>"; };
 		CED276BB2152F31F0008F912 /* ApplesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesCollection.swift; sourceTree = "<group>"; };
 		CEFD319C215A007E00CC850D /* ApplesCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesCreator.swift; sourceTree = "<group>"; };
+		D297A61F25F5F7424C661387 /* ApplesModuleRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleRouterInput.swift; sourceTree = "<group>"; };
+		E613AE0B480004758151808A /* ApplesModuleInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractorOutput.swift; sourceTree = "<group>"; };
 		E7808B140B5F282A04975527 /* Pods-PrototypeOfAsynchronousDataStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrototypeOfAsynchronousDataStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrototypeOfAsynchronousDataStore/Pods-PrototypeOfAsynchronousDataStore.release.xcconfig"; sourceTree = "<group>"; };
+		F4DDEFC5310EC9DCAE75CCD7 /* ApplesModuleViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleViewInput.swift; sourceTree = "<group>"; };
+		F636CF11D97E2181CEA00240 /* ApplesModuleInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractorInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		966B07C6217E110700EE3363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE13C2772152E7FE002D8B35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0879B916713A14A884B938F7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */,
+				A7D830F913BA0A919D30FD65 /* ApplesModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		185C391E85921054F345660B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */,
+				38816CB856813E02D4847B7B /* ApplesModuleInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1D3FCEE2A93AED4C4B9B1760 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D297A61F25F5F7424C661387 /* ApplesModuleRouterInput.swift */,
+				2B83FBCA939121B1ACFBF39C /* ApplesModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		1EB1EA2414BF9B461A351CF9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,13 +145,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C9B91866F6C4CCB3B9C82A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4DDEFC5310EC9DCAE75CCD7 /* ApplesModuleViewInput.swift */,
+				2B7F1BA494C00526695AB3D3 /* ApplesModuleViewOutput.swift */,
+				9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95EEFDAD78B8C07ABD1CA716 /* ApplesSrc */ = {
+			isa = PBXGroup;
+			children = (
+				E62477200C5F6BF29A8904ED /* ApplesModule */,
+			);
+			path = ApplesSrc;
+			sourceTree = "<group>";
+		};
+		966B07CA217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */,
+				966B07CD217E110700EE3363 /* Info.plist */,
+			);
+			path = PrototypeOfAsynchronousDataStoreTests;
+			sourceTree = "<group>";
+		};
 		CE13C2712152E7FE002D8B35 = {
 			isa = PBXGroup;
 			children = (
 				CE13C27C2152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore */,
+				966B07CA217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests */,
 				CE13C27B2152E7FE002D8B35 /* Products */,
 				1EB1EA2414BF9B461A351CF9 /* Pods */,
 				767168242E5DDBCF5E16B4DD /* Frameworks */,
+				95EEFDAD78B8C07ABD1CA716 /* ApplesSrc */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				CE13C27A2152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore.app */,
+				966B07C9217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,9 +254,49 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		E62477200C5F6BF29A8904ED /* ApplesModule */ = {
+			isa = PBXGroup;
+			children = (
+				7C9B91866F6C4CCB3B9C82A1 /* View */,
+				0879B916713A14A884B938F7 /* Presenter */,
+				E8117C8C6731E36A086C5357 /* Interactor */,
+				1D3FCEE2A93AED4C4B9B1760 /* Router */,
+				185C391E85921054F345660B /* Configurator */,
+			);
+			path = ApplesModule;
+			sourceTree = "<group>";
+		};
+		E8117C8C6731E36A086C5357 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F636CF11D97E2181CEA00240 /* ApplesModuleInteractorInput.swift */,
+				E613AE0B480004758151808A /* ApplesModuleInteractorOutput.swift */,
+				63766BEA1D2242188FDC426F /* ApplesModuleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		966B07C8217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966B07D2217E110700EE3363 /* Build configuration list for PBXNativeTarget "PrototypeOfAsynchronousDataStoreTests" */;
+			buildPhases = (
+				966B07C5217E110700EE3363 /* Sources */,
+				966B07C6217E110700EE3363 /* Frameworks */,
+				966B07C7217E110700EE3363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				966B07CF217E110700EE3363 /* PBXTargetDependency */,
+			);
+			name = PrototypeOfAsynchronousDataStoreTests;
+			productName = PrototypeOfAsynchronousDataStoreTests;
+			productReference = 966B07C9217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CE13C2792152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE13C28C2152E7FF002D8B35 /* Build configuration list for PBXNativeTarget "PrototypeOfAsynchronousDataStore" */;
@@ -180,10 +322,15 @@
 		CE13C2722152E7FE002D8B35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = user;
 				TargetAttributes = {
+					966B07C8217E110700EE3363 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE13C2792152E7FE002D8B35;
+					};
 					CE13C2792152E7FE002D8B35 = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
@@ -204,11 +351,19 @@
 			projectRoot = "";
 			targets = (
 				CE13C2792152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore */,
+				966B07C8217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		966B07C7217E110700EE3363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE13C2782152E7FE002D8B35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +420,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		966B07C5217E110700EE3363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966B07CC217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE13C2762152E7FE002D8B35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,10 +442,30 @@
 				CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */,
 				CED276BC2152F31F0008F912 /* ApplesCollection.swift in Sources */,
 				CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */,
+				6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */,
+				34B04C6AB39EBBBBA8F0EF5A /* ApplesModuleViewOutput.swift in Sources */,
+				C818FE0B618A8FAF87BF7981 /* ApplesModuleViewController.swift in Sources */,
+				39CD23FD46D26DD39F995E24 /* ApplesModuleModuleInput.swift in Sources */,
+				1967310E5FB465D734B85C33 /* ApplesModulePresenter.swift in Sources */,
+				17A19E51765B652C9338D80B /* ApplesModuleInteractorInput.swift in Sources */,
+				F3F02F51F1DD5782506A9D27 /* ApplesModuleInteractorOutput.swift in Sources */,
+				FF7770A1CA5B05132909F26F /* ApplesModuleInteractor.swift in Sources */,
+				E8AF5DB37DE992599DAA528B /* ApplesModuleRouterInput.swift in Sources */,
+				6160AED6405A9C43EC112709 /* ApplesModuleRouter.swift in Sources */,
+				774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */,
+				4BD489396A20CA2971A6BCC9 /* ApplesModuleInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		966B07CF217E110700EE3363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE13C2792152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore */;
+			targetProxy = 966B07CE217E110700EE3363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE13C2812152E7FE002D8B35 /* Main.storyboard */ = {
@@ -304,6 +487,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		966B07D0217E110700EE3363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA3S5JC7G2;
+				INFOPLIST_FILE = PrototypeOfAsynchronousDataStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ispringsolutions.PrototypeOfAsynchronousDataStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrototypeOfAsynchronousDataStore.app/PrototypeOfAsynchronousDataStore";
+			};
+			name = Debug;
+		};
+		966B07D1217E110700EE3363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AA3S5JC7G2;
+				INFOPLIST_FILE = PrototypeOfAsynchronousDataStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ispringsolutions.PrototypeOfAsynchronousDataStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrototypeOfAsynchronousDataStore.app/PrototypeOfAsynchronousDataStore";
+			};
+			name = Release;
+		};
 		CE13C28A2152E7FF002D8B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -454,6 +669,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		966B07D2217E110700EE3363 /* Build configuration list for PBXNativeTarget "PrototypeOfAsynchronousDataStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966B07D0217E110700EE3363 /* Debug */,
+				966B07D1217E110700EE3363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE13C2752152E7FE002D8B35 /* Build configuration list for PBXProject "PrototypeOfAsynchronousDataStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

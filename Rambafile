@@ -9,12 +9,21 @@ xcodeproj_path: PrototypeOfAsynchronousDataStore.xcodeproj
 # The main project target name
 project_target: PrototypeOfAsynchronousDataStore
 
+# The file path for new modules
+project_file_path: ApplesSrc
+
+# The Xcode group path to new modules
+project_group_path: ApplesSrc
+
 ### Tests generation settings section
 # The tests target name
 test_target: PrototypeOfAsynchronousDataStore
 
-### Dependencies settings section
-podfile_path: Podfile
+# The file path for new tests
+test_file_path: ApplesTests
+
+# The Xcode group path to new tests
+test_group_path: ApplesTests
 
 ### Templates
 templates:
