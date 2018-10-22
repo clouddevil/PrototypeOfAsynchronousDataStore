@@ -10,4 +10,5 @@ import Foundation
 
 protocol ApplesModuleInteractorInput {
 
+    func fetchApples(_ filter: AppleFilter)
 }

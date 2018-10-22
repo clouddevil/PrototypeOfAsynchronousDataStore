@@ -14,4 +14,6 @@ protocol ApplesModuleViewInput: class {
     */
 
     func setupInitialState()
+    
+    func updateApples()
 }

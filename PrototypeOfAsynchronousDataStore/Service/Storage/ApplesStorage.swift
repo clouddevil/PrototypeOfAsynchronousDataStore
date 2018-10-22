@@ -9,8 +9,8 @@
 import Foundation
 import Promises
 
-enum AppleFilter {
-    case needToEat
+enum AppleFilter : Int {
+    case needToEat = 0
     case eaten
     case onATree
     case all

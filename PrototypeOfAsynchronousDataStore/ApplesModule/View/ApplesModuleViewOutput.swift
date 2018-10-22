@@ -8,10 +8,8 @@
 
 protocol ApplesModuleViewOutput {
 
-    /**
-        @author Eugene Kalinin
-        Notify presenter that view is ready
-    */
-
-    func viewIsReady()
+    var appleCount: Int! { get }
+    func obtainApple(_ atIndex:Int) -> Apple
+  
+    func obtainApples(_ filter:AppleFilter)
 }

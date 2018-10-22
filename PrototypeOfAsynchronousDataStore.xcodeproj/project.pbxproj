@@ -18,10 +18,9 @@
 		8B31CE30B8B116BC4E9A5BEF /* Pods_PrototypeOfAsynchronousDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */; };
 		966B07CC217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */; };
 		966B07D4217E140700EE3363 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07D3217E140700EE3363 /* main.swift */; };
-		C818FE0B618A8FAF87BF7981 /* ApplesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */; };
 		CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */; };
 		CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27D2152E7FE002D8B35 /* AppDelegate.swift */; };
-		CE13C2802152E7FE002D8B35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27F2152E7FE002D8B35 /* ViewController.swift */; };
+		CE13C2802152E7FE002D8B35 /* ApplesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27F2152E7FE002D8B35 /* ApplesModuleViewController.swift */; };
 		CE13C2832152E7FE002D8B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE13C2812152E7FE002D8B35 /* Main.storyboard */; };
 		CE13C2852152E7FF002D8B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE13C2842152E7FF002D8B35 /* Assets.xcassets */; };
 		CE13C2882152E7FF002D8B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE13C2862152E7FF002D8B35 /* LaunchScreen.storyboard */; };
@@ -58,14 +57,13 @@
 		966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeOfAsynchronousDataStoreTests.swift; sourceTree = "<group>"; };
 		966B07CD217E110700EE3363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966B07D3217E140700EE3363 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ApplesSrc/main.swift; sourceTree = SOURCE_ROOT; };
-		9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleViewController.swift; sourceTree = "<group>"; };
 		A7D830F913BA0A919D30FD65 /* ApplesModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModulePresenter.swift; sourceTree = "<group>"; };
 		C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleConfigurator.swift; sourceTree = "<group>"; };
 		C6AA40CE5857CA4FE0FC6DC8 /* Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrototypeOfAsynchronousDataStore/Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig"; sourceTree = "<group>"; };
 		CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE13C27A2152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrototypeOfAsynchronousDataStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE13C27D2152E7FE002D8B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE13C27F2152E7FE002D8B35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE13C27F2152E7FE002D8B35 /* ApplesModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesModuleViewController.swift; sourceTree = "<group>"; };
 		CE13C2822152E7FE002D8B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE13C2842152E7FF002D8B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE13C2872152E7FF002D8B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,9 +148,10 @@
 		7C9B91866F6C4CCB3B9C82A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */,
+				CE13C27F2152E7FE002D8B35 /* ApplesModuleViewController.swift */,
 				F4DDEFC5310EC9DCAE75CCD7 /* ApplesModuleViewInput.swift */,
 				2B7F1BA494C00526695AB3D3 /* ApplesModuleViewOutput.swift */,
-				9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				966B07D6217E23C200EE3363 /* Storage */,
-				CEFD319C215A007E00CC850D /* ApplesCreator.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -178,6 +176,7 @@
 		966B07D6217E23C200EE3363 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				CEFD319C215A007E00CC850D /* ApplesCreator.swift */,
 				CEA03CC42167035A001DB9F2 /* JsonApple.swift */,
 				CE13C2912152E9E5002D8B35 /* ApplesStorage.swift */,
 				CED276B72152EC420008F912 /* DBStorage.swift */,
@@ -224,8 +223,6 @@
 		CEA03CC821674729001DB9F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */,
-				CE13C27F2152E7FE002D8B35 /* ViewController.swift */,
 				CE13C2862152E7FF002D8B35 /* LaunchScreen.storyboard */,
 				CE13C2812152E7FE002D8B35 /* Main.storyboard */,
 			);
@@ -426,7 +423,7 @@
 				CED276BA2152EC4C0008F912 /* NetworkStorage.swift in Sources */,
 				CEFD319D215A007E00CC850D /* ApplesCreator.swift in Sources */,
 				CED276B82152EC420008F912 /* DBStorage.swift in Sources */,
-				CE13C2802152E7FE002D8B35 /* ViewController.swift in Sources */,
+				CE13C2802152E7FE002D8B35 /* ApplesModuleViewController.swift in Sources */,
 				966B07D4217E140700EE3363 /* main.swift in Sources */,
 				CEA03CC52167035A001DB9F2 /* JsonApple.swift in Sources */,
 				CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */,
@@ -434,7 +431,6 @@
 				CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */,
 				6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */,
 				34B04C6AB39EBBBBA8F0EF5A /* ApplesModuleViewOutput.swift in Sources */,
-				C818FE0B618A8FAF87BF7981 /* ApplesModuleViewController.swift in Sources */,
 				39CD23FD46D26DD39F995E24 /* ApplesModuleModuleInput.swift in Sources */,
 				1967310E5FB465D734B85C33 /* ApplesModulePresenter.swift in Sources */,
 				17A19E51765B652C9338D80B /* ApplesModuleInteractorInput.swift in Sources */,

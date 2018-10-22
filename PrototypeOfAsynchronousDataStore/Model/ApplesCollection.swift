@@ -13,13 +13,13 @@ typealias VoidBlock = () -> Void
 class ApplesCollection {
     
     private(set) var apples = Array<Apple>()
-    private var subscribers = Dictionary<NSObject, VoidBlock>()
+    private var subscribers = Dictionary<AnyHashable, VoidBlock>()
     
-    func subscribeOnChanges(obj: NSObject, block: @escaping VoidBlock) {
+    func subscribeOnChanges(obj: AnyHashable, block: @escaping VoidBlock) {
         subscribers[obj] = block
     }
     
-    func unsubscribe(obj: NSObject) {
+    func unsubscribe(obj: AnyHashable) {
         subscribers.removeValue(forKey: obj)
     }
     
