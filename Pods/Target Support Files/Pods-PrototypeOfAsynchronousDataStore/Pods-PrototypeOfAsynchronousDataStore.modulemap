@@ -1,6 +1,0 @@
-framework module Pods_PrototypeOfAsynchronousDataStore {
-  umbrella header "Pods-PrototypeOfAsynchronousDataStore-umbrella.h"
-
-  export *
-  module * { export * }
-}
