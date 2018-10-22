@@ -22,6 +22,7 @@ class ApplesCreator {
             for _ in 0..<editCount {
                 let randAppleIndex = randomInt(min: 0, max: existingApples.count)
                 let appleId = existingApples[randAppleIndex].id
+                existingApples.remove(at: randAppleIndex)
                 existingApples.append(configureRandomApple(id: appleId))
             }
         }
