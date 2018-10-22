@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,7 +80,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-YX-KFP">
+                            <tabBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-YX-KFP">
                                 <rect key="frame" x="0.0" y="29" width="309" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -98,27 +98,45 @@
                                     </tabBarItem>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5l-I7-FY2">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pon-rE-hye">
                                 <rect key="frame" x="315" y="40" width="53" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="60h-6E-wBt"/>
-                                    <constraint firstAttribute="width" constant="53" id="slj-IY-ctD"/>
-                                </constraints>
-                                <state key="normal" title="Refresh"/>
-                                <connections>
-                                    <action selector="refreshButtonWasTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BhF-Zl-LxV"/>
-                                </connections>
-                            </button>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QRr-m2-82k">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-fH-siT">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MNx-Tj-XOZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5l-I7-FY2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="60h-6E-wBt"/>
+                                                                    <constraint firstAttribute="width" constant="53" id="slj-IY-ctD"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Refresh"/>
+                                                                <connections>
+                                                                    <action selector="refreshButtonWasTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BhF-Zl-LxV"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="L0F-YX-KFP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="86p-Ec-kgS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o5l-I7-FY2" secondAttribute="trailing" constant="7" id="8J9-M7-luf"/>
                             <constraint firstItem="Fih-50-Hev" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9Bf-L5-e7o"/>
                             <constraint firstItem="Fih-50-Hev" firstAttribute="top" secondItem="L0F-YX-KFP" secondAttribute="bottom" constant="5" id="H7G-J4-WcJ"/>
-                            <constraint firstItem="L0F-YX-KFP" firstAttribute="trailing" secondItem="o5l-I7-FY2" secondAttribute="leading" constant="-6" id="PaU-dN-ST9"/>
                             <constraint firstItem="L0F-YX-KFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RmA-q1-C1j"/>
-                            <constraint firstItem="o5l-I7-FY2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bpJ-nG-cp2"/>
                             <constraint firstAttribute="trailing" secondItem="Fih-50-Hev" secondAttribute="trailing" id="caz-bI-nV5"/>
                             <constraint firstItem="Fih-50-Hev" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cf1-ce-NYW"/>
                         </constraints>

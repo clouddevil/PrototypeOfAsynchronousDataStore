@@ -17,6 +17,7 @@
 		774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */; };
 		8B31CE30B8B116BC4E9A5BEF /* Pods_PrototypeOfAsynchronousDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */; };
 		966B07CC217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */; };
+		966B07D4217E140700EE3363 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07D3217E140700EE3363 /* main.swift */; };
 		C818FE0B618A8FAF87BF7981 /* ApplesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */; };
 		CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */; };
 		CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27D2152E7FE002D8B35 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		966B07C9217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeOfAsynchronousDataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeOfAsynchronousDataStoreTests.swift; sourceTree = "<group>"; };
 		966B07CD217E110700EE3363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966B07D3217E140700EE3363 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ApplesSrc/main.swift; sourceTree = SOURCE_ROOT; };
 		9FDDD932C78CB7EF4DE7A6F3 /* ApplesModuleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleViewController.swift; sourceTree = "<group>"; };
 		A7D830F913BA0A919D30FD65 /* ApplesModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModulePresenter.swift; sourceTree = "<group>"; };
 		C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleConfigurator.swift; sourceTree = "<group>"; };
@@ -155,14 +157,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		95EEFDAD78B8C07ABD1CA716 /* ApplesSrc */ = {
-			isa = PBXGroup;
-			children = (
-				E62477200C5F6BF29A8904ED /* ApplesModule */,
-			);
-			path = ApplesSrc;
-			sourceTree = "<group>";
-		};
 		966B07CA217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +164,26 @@
 				966B07CD217E110700EE3363 /* Info.plist */,
 			);
 			path = PrototypeOfAsynchronousDataStoreTests;
+			sourceTree = "<group>";
+		};
+		966B07D5217E237100EE3363 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				966B07D6217E23C200EE3363 /* Storage */,
+				CEFD319C215A007E00CC850D /* ApplesCreator.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		966B07D6217E23C200EE3363 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				CEA03CC42167035A001DB9F2 /* JsonApple.swift */,
+				CE13C2912152E9E5002D8B35 /* ApplesStorage.swift */,
+				CED276B72152EC420008F912 /* DBStorage.swift */,
+				CED276B92152EC4C0008F912 /* NetworkStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		CE13C2712152E7FE002D8B35 = {
@@ -180,7 +194,6 @@
 				CE13C27B2152E7FE002D8B35 /* Products */,
 				1EB1EA2414BF9B461A351CF9 /* Pods */,
 				767168242E5DDBCF5E16B4DD /* Frameworks */,
-				95EEFDAD78B8C07ABD1CA716 /* ApplesSrc */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,32 +209,16 @@
 		CE13C27C2152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore */ = {
 			isa = PBXGroup;
 			children = (
-				CEA03CCA2167474F001DB9F2 /* Storage */,
 				CEA03CC921674745001DB9F2 /* Model */,
 				CEA03CC821674729001DB9F2 /* View */,
+				966B07D5217E237100EE3363 /* Service */,
+				E62477200C5F6BF29A8904ED /* ApplesModule */,
 				CE13C27D2152E7FE002D8B35 /* AppDelegate.swift */,
+				966B07D3217E140700EE3363 /* main.swift */,
 				CE13C2842152E7FF002D8B35 /* Assets.xcassets */,
 				CE13C2892152E7FF002D8B35 /* Info.plist */,
 			);
 			path = PrototypeOfAsynchronousDataStore;
-			sourceTree = "<group>";
-		};
-		CEA03CC621674705001DB9F2 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				CED276B92152EC4C0008F912 /* NetworkStorage.swift */,
-				CEFD319C215A007E00CC850D /* ApplesCreator.swift */,
-				CEA03CC42167035A001DB9F2 /* JsonApple.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		CEA03CC721674719001DB9F2 /* DB */ = {
-			isa = PBXGroup;
-			children = (
-				CED276B72152EC420008F912 /* DBStorage.swift */,
-			);
-			path = DB;
 			sourceTree = "<group>";
 		};
 		CEA03CC821674729001DB9F2 /* View */ = {
@@ -242,16 +239,6 @@
 				CED276BB2152F31F0008F912 /* ApplesCollection.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		CEA03CCA2167474F001DB9F2 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				CE13C2912152E9E5002D8B35 /* ApplesStorage.swift */,
-				CEA03CC721674719001DB9F2 /* DB */,
-				CEA03CC621674705001DB9F2 /* Network */,
-			);
-			path = Storage;
 			sourceTree = "<group>";
 		};
 		E62477200C5F6BF29A8904ED /* ApplesModule */ = {
@@ -440,6 +427,7 @@
 				CEFD319D215A007E00CC850D /* ApplesCreator.swift in Sources */,
 				CED276B82152EC420008F912 /* DBStorage.swift in Sources */,
 				CE13C2802152E7FE002D8B35 /* ViewController.swift in Sources */,
+				966B07D4217E140700EE3363 /* main.swift in Sources */,
 				CEA03CC52167035A001DB9F2 /* JsonApple.swift in Sources */,
 				CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */,
 				CED276BC2152F31F0008F912 /* ApplesCollection.swift in Sources */,
@@ -640,6 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = AA3S5JC7G2;
 				INFOPLIST_FILE = PrototypeOfAsynchronousDataStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -657,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = AA3S5JC7G2;
 				INFOPLIST_FILE = PrototypeOfAsynchronousDataStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
