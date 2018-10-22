@@ -23,13 +23,13 @@ class NetworkStorage {
                 fatalError()
             }
             
-            let delay = UInt32.random(in: 1..<3)
+            let delay = UInt32(randomInt(min: 1, max: 3))
             print("Network fetching delay: \(delay)")
             sleep(delay)
             
-            let added = Int.random(in: 0..<4)
-            let edited = Int.random(in: 0..<5)
-            let removed = Int.random(in: 0..<3)
+            let added = randomInt(min: 0, max: 4)
+            let edited = randomInt(min: 0, max: 5)
+            let removed = randomInt(min: 0, max: 3)
             
             print("Added: \(added), edited: \(edited), removed: \(removed)")
             

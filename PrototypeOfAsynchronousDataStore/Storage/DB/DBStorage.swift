@@ -21,6 +21,8 @@ class DBStorage {
         return DispatchQueue(label: "com.someapp.dbStorage")
     }()
     
+    
+    
     func fetchApplesFromDb(by state: AppleState? = nil) -> Promise<[Apple]> {
         return Promise<[Apple]>(on: dbStorageSerialQueue) { [weak self] in
             
@@ -28,8 +30,7 @@ class DBStorage {
                 fatalError()
             }
             
-            let delay = UInt32.random(in: 0..<1)
-            sleep(delay)
+            sleepThread(time: 1)
             
             print("Fetching from db using filter: \(state?.rawValue ?? "Все")")
             
@@ -53,10 +54,9 @@ class DBStorage {
                 fatalError()
             }
             
-            let delay = UInt32.random(in: 0..<2)
-            sleep(delay)
+            sleepThread(time: 1)
             
-            print("DB sync delay: \(delay)")
+            //print("DB sync delay: \(delay)")
             
             strongSelf.apples = [Int:Apple]()
             for apple in jsonApples {

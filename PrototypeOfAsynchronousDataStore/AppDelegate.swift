@@ -8,6 +8,15 @@
 
 import UIKit
 
+func randomInt(min: Int, max: Int) -> Int {
+    return min + Int(arc4random_uniform(UInt32(max - min)))
+}
+
+func sleepThread(time: Int) {
+    let delay = UInt32(randomInt(min: 0, max: time))
+    sleep(delay)
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

@@ -20,7 +20,7 @@ class ApplesCreator {
         
         if (editCount > 0 && existingApples.count > 0) {
             for _ in 0..<editCount {
-                let randAppleIndex = Int.random(in: 0..<existingApples.count)
+                let randAppleIndex = randomInt(min: 0, max: existingApples.count)
                 let appleId = existingApples[randAppleIndex].id
                 existingApples.append(configureRandomApple(id: appleId))
             }
@@ -35,7 +35,7 @@ class ApplesCreator {
         
         if (removeCount > 0 && removeCount < existingApples.count) {
             for _ in 0..<removeCount {
-                let randAppleIndex = Int.random(in: 0..<existingApples.count)
+                let randAppleIndex = randomInt(min: 0, max: existingApples.count)
                 existingApples.remove(at: randAppleIndex)
             }
         }
@@ -45,9 +45,9 @@ class ApplesCreator {
     
     private func configureRandomApple(id: Int? = nil) -> JsonApple {
         
-        let randTitleIndex = Int.random(in: 0..<titlesDatasource.count)
-        let randColorIndex = Int.random(in: 0..<colorsDatasource.count)
-        let randStateIndex = Int.random(in: 0..<statesDatasource.count)
+        let randTitleIndex = randomInt(min: 0, max: titlesDatasource.count)
+        let randColorIndex = randomInt(min: 0, max: colorsDatasource.count)
+        let randStateIndex = randomInt(min: 0, max: statesDatasource.count)
         
         let appleId = id ?? lastId
         return JsonApple(appleId: appleId,
