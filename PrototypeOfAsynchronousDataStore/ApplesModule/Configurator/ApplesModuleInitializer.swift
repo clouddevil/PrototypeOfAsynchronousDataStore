@@ -11,7 +11,7 @@ import UIKit
 class ApplesModuleModuleInitializer: NSObject {
 
     //Connect with object on storyboard
-    var applesmoduleViewController: ApplesModuleViewController!
+    @IBOutlet var applesmoduleViewController: ApplesModuleViewController!
 
     override func awakeFromNib() {
 

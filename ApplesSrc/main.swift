@@ -9,8 +9,9 @@
 
 import Foundation
 import UIKit
-/*
-@objc public class AppDelegateHandler: NSObject, UIApplicationDelegate {
+
+    
+public class AppDelegateHandler: NSObject, UIApplicationDelegate {
     
 }
 
@@ -18,28 +19,28 @@ public class AppDelegateProxy: NSObject, UIApplicationDelegate {
     
     public var handlers:[AppDelegateHandler] = []
     
-    public override func respondsToSelector(aSelector: Selector) -> Bool {
+    public override func responds(to aSelector: Selector) -> Bool {
         
         if self.shouldForwardSelector(aSelector) {
             for handler in self.handlers {
-                if handler.respondsToSelector(Selector(aSelector)) {
+                if handler.responds(to: aSelector) {
                     return true
                 }
             }
         }
-        return NSObject.instancesRespondToSelector(aSelector)
+        return NSObject.instancesRespond(to:aSelector)
     }
     
-    public override func forwardingTargetForSelector(aSelector: Selector) -> AnyObject? {
+    public override func forwardingTarget(for aSelector: Selector) -> Any? {
         for handler in self.handlers {
-            if handler.respondsToSelector(aSelector) {
+            if handler.responds(to: aSelector) {
                 return handler
             }
         }
         return nil
     }
     
-    private func shouldForwardSelector(aSelector: Selector) -> Bool {
+    private func shouldForwardSelector(_ aSelector: Selector) -> Bool {
         return isSelector(aSelector, fromProtocol: UIApplicationDelegate.self) &&
             !isSelector(aSelector, fromProtocol: NSObjectProtocol.self)
     }
@@ -62,7 +63,7 @@ public class AppDelegateProxy: NSObject, UIApplicationDelegate {
         return false;
     }
 }
-*/
+
 
 UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeArgv)
     .bindMemory(to: UnsafeMutablePointer<Int8>.self, capacity: Int(CommandLine.argc)), nil, NSStringFromClass(AppDelegate.self))

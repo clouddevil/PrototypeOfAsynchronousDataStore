@@ -32,6 +32,10 @@ class ApplesModuleViewController: UIViewController, ApplesModuleViewInput {
         output.obtainApples(filter)
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
