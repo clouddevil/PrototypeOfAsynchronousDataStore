@@ -10,10 +10,10 @@ import Foundation
 import Promises
 
 enum AppleFilter : Int {
-    case needToEat = 0
+    case all = 0
+    case needToEat
     case eaten
     case onATree
-    case all
 }
 
 class ApplesStorage {

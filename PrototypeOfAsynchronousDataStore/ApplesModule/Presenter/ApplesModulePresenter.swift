@@ -28,6 +28,12 @@ class ApplesModulePresenter: ApplesModuleModuleInput, ApplesModuleViewOutput, Ap
         return self.apples[atIndex]
     }
     
+    func refreshApples()
+    {
+        self.interactor.refreshApples()
+        view.updateApples()
+    }
+    
     func applesDidFetched(_ apples:[Apple])
     {
         self.apples = apples

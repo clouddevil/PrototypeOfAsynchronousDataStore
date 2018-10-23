@@ -29,7 +29,7 @@ class ApplesModuleViewController: UIViewController, ApplesModuleViewInput {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        output.obtainApples(filter)
+        obtainApples()
     }
     
     override func viewDidLayoutSubviews() {
@@ -42,8 +42,12 @@ class ApplesModuleViewController: UIViewController, ApplesModuleViewInput {
         self.collectionView.reloadData()
     }
     
-    @IBAction func refreshButtonWasTaped(_ sender: Any) {
+    func obtainApples() {
         output.obtainApples(filter)
+    }
+    
+    @IBAction func refreshButtonWasTaped(_ sender: Any) {
+        output.refreshApples()
     }
 }
 
@@ -71,5 +75,6 @@ extension ApplesModuleViewController: UITabBarDelegate {
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         self.filter = AppleFilter(rawValue: item.tag) ?? .all
+        obtainApples()
     }
 }

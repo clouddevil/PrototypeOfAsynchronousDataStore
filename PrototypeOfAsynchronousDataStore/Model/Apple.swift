@@ -50,13 +50,10 @@ class Apple {
         switch color {
         case "green":
             colorRepresentation = .green
-            break
         case "red":
             colorRepresentation = .red
-            break
         case "yellow":
             colorRepresentation = .yellow
-            break
         default:
             break
         }

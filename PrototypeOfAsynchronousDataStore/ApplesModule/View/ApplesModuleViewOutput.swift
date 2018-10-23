@@ -11,5 +11,6 @@ protocol ApplesModuleViewOutput {
     var appleCount: Int! { get }
     func obtainApple(_ atIndex:Int) -> Apple
   
+    func refreshApples()
     func obtainApples(_ filter:AppleFilter)
 }

@@ -28,7 +28,11 @@ class ApplesModuleInteractor: ApplesModuleInteractorInput {
     
     func fetchApples(_ filter: AppleFilter) {
         applesStorage.filter = filter
-        applesStorage.fetchApples()
+    }
+    
+    func refreshApples()
+    {
+       applesStorage.fetchApples()
     }
     
     func apples() -> [Apple] {
