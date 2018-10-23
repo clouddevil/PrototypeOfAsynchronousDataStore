@@ -8,7 +8,12 @@
 
 class ApplesModulePresenter: ApplesModuleModuleInput, ApplesModuleViewOutput, ApplesModuleInteractorOutput {
     
-    var appleCount: Int! = 0
+    var apples: [Apple] = []
+    var appleCount: Int!  {
+        get {
+            return apples.count
+        }
+    }
     var filter: AppleFilter! = .all
     
     weak var view: ApplesModuleViewInput!
@@ -20,11 +25,12 @@ class ApplesModulePresenter: ApplesModuleModuleInput, ApplesModuleViewOutput, Ap
     }
     
     func obtainApple(_ atIndex: Int) -> Apple {
-        return Apple(with: "test", color: .red, state: .eaten)
+        return self.apples[atIndex]
     }
     
-    func applesDidFetched()
+    func applesDidFetched(_ apples:[Apple])
     {
+        self.apples = apples
         view.updateApples()
     }
 }
