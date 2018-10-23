@@ -9,8 +9,15 @@
 import Foundation
 import Typhoon
 
-public class ApplesTyphoonAssembly : TyphoonAssembly {
+public class ApplesTyphoonAssembly: TyphoonAssembly {
+/*
+  @objc public dynamic func appDelegate() -> Any {
     
-    
-    
+        return TyphoonDefinition.withClass(AppDelegate.self) {
+            (definition) in
+            
+            definition?.injectProperty(Selector(("appAssembly")), with: self)
+        }
+    }
+*/
 }

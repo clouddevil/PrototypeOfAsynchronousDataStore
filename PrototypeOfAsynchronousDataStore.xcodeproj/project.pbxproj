@@ -11,7 +11,6 @@
 		1967310E5FB465D734B85C33 /* ApplesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D830F913BA0A919D30FD65 /* ApplesModulePresenter.swift */; };
 		34B04C6AB39EBBBBA8F0EF5A /* ApplesModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F1BA494C00526695AB3D3 /* ApplesModuleViewOutput.swift */; };
 		39CD23FD46D26DD39F995E24 /* ApplesModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */; };
-		4BD489396A20CA2971A6BCC9 /* ApplesModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38816CB856813E02D4847B7B /* ApplesModuleInitializer.swift */; };
 		6160AED6405A9C43EC112709 /* ApplesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83FBCA939121B1ACFBF39C /* ApplesModuleRouter.swift */; };
 		6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDEFC5310EC9DCAE75CCD7 /* ApplesModuleViewInput.swift */; };
 		774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */; };
@@ -51,7 +50,6 @@
 /* Begin PBXFileReference section */
 		2B7F1BA494C00526695AB3D3 /* ApplesModuleViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleViewOutput.swift; sourceTree = "<group>"; };
 		2B83FBCA939121B1ACFBF39C /* ApplesModuleRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleRouter.swift; sourceTree = "<group>"; };
-		38816CB856813E02D4847B7B /* ApplesModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInitializer.swift; sourceTree = "<group>"; };
 		45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrototypeOfAsynchronousDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleModuleInput.swift; sourceTree = "<group>"; };
 		63766BEA1D2242188FDC426F /* ApplesModuleInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractor.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */,
-				38816CB856813E02D4847B7B /* ApplesModuleInitializer.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -447,7 +444,6 @@
 				E8AF5DB37DE992599DAA528B /* ApplesModuleRouterInput.swift in Sources */,
 				6160AED6405A9C43EC112709 /* ApplesModuleRouter.swift in Sources */,
 				774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */,
-				4BD489396A20CA2971A6BCC9 /* ApplesModuleInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

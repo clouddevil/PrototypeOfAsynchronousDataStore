@@ -18,16 +18,18 @@ func sleepThread(time: Int) {
 }
 
 //@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: AppDelegateHandler {
 
     var window: UIWindow?
     
-    var configurator: ApplesModuleModuleInitializer! = ApplesModuleModuleInitializer()
+    var appAssembly:ApplesTyphoonAssembly!
    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         
-        self.configurator.load()
+        let configurator = ApplesModuleModuleConfigurator()
+        configurator.configureModuleForViewInput(viewInput: self.window?.rootViewController!)
         return true
     }
 

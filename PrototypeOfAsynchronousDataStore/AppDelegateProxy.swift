@@ -9,13 +9,18 @@
 import UIKit
 import Foundation
 
-public class AppDelegateHandler: NSObject, UIApplicationDelegate {
+public class AppDelegateHandler: UIResponder, UIApplicationDelegate {
     
 }
 
 public class AppDelegateProxy: NSObject, UIApplicationDelegate {
-    
+
     public var handlers:[AppDelegateHandler] = []
+    
+    override init()
+    {
+        //handlers = [AppDelegate()];
+    }
     
     public override func responds(to aSelector: Selector) -> Bool {
         

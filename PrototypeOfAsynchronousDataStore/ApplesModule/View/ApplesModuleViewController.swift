@@ -10,7 +10,7 @@ import UIKit
 
 class ApplesModuleViewController: UIViewController, ApplesModuleViewInput {
     
-    var filter: AppleFilter!
+    var filter: AppleFilter! = .all
     var output:ApplesModuleViewOutput!
     
     @IBOutlet weak var tabBar: UITabBar!
@@ -30,10 +30,6 @@ class ApplesModuleViewController: UIViewController, ApplesModuleViewInput {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         output.obtainApples(filter)
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
     }
     
     override func viewDidLayoutSubviews() {
