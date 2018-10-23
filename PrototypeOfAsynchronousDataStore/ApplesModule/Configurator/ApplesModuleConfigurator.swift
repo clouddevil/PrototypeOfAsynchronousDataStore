@@ -25,7 +25,11 @@ class ApplesModuleModuleConfigurator {
         presenter.view = viewController
         presenter.router = router
 
-        let interactor = ApplesModuleInteractor()
+        // ApplesStorage -> ApplesService
+        
+        let storage = ApplesStorage(networkStorage: NetworkStorage(), dbStorage: DBStorage())
+        let interactor = ApplesModuleInteractor(storage)
+        
         interactor.output = presenter
 
         presenter.interactor = interactor

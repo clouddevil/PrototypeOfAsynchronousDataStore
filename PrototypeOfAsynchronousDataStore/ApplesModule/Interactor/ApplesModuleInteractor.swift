@@ -11,11 +11,11 @@ class ApplesModuleInteractor: ApplesModuleInteractorInput {
     weak var output: ApplesModuleInteractorOutput!
 
     let key = "Unique key for this interactor"
-
-    // TODO: inject service here
-    private var applesStorage: ApplesStorage = ApplesStorage(networkStorage: NetworkStorage(), dbStorage: DBStorage())
     
-    init() {
+    var applesStorage: ApplesStorage!
+    
+    init(_ applesStorage:ApplesStorage!) {
+        self.applesStorage = applesStorage
         applesStorage.applesCollection.subscribeOnChanges(obj: self.key, block: {
             [weak self] () -> Void in
             self?.output.applesDidFetched(self?.apples() ?? [])
