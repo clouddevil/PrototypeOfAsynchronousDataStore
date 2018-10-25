@@ -1,0 +1,3 @@
+# PrototypeOfAsynchronousDataStore
+
+ Прототип синхронизации яблок.
