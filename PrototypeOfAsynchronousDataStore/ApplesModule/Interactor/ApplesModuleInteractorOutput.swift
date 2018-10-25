@@ -10,6 +10,6 @@ import Foundation
 
 protocol ApplesModuleInteractorOutput: class {
     
-    func applesDidFetched(_ apples:[Apple])
+    func applesDidFetched(_ apples:[Apple]) // applesDidFetch
 
 }
