@@ -29,17 +29,19 @@ extension AppleColor {
 
 
 class Apple {
+    var id: Int = 0
     var title: String = ""
     var color: AppleColor = .green
     var state: AppleState = .onATree
     
-    required init(with title: String, color: AppleColor, state: AppleState) {
+    required init(_ id:Int, with title: String, color: AppleColor, state: AppleState) {
+        self.id = id
         self.title = title
         self.color = color
         self.state = state
     }
     
-    convenience init(with title: String, color: String, state: String) {
+    convenience init(_ id: Int, with title: String, color: String, state: String) {
         
         var colorRepresentation = AppleColor.green
         switch color {
@@ -65,6 +67,6 @@ class Apple {
             break
         }
         
-        self.init( with: title, color: colorRepresentation, state: stateRepresentation)
+        self.init(id, with: title, color: colorRepresentation, state: stateRepresentation)
     }
 }

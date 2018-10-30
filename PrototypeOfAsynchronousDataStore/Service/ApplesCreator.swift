@@ -8,6 +8,12 @@
 
 import Foundation
 
+extension Array {
+    subscript (safe index: Int) -> Element? {
+        return (index < count) ? self[index] : nil
+    }
+}
+
 class ApplesCreator {
     
     private var lastId = 0
@@ -15,6 +21,14 @@ class ApplesCreator {
     private let colorsDatasource: Array<String> = ["green", "red", "yellow"]
     private let statesDatasource: Array<String> = ["eaten", "needToEat", "onATree"]
     private var existingApples = [JsonApple]()
+    
+    // TODO:
+    func eatApple(_ appleId: Int) -> [JsonApple]
+    {
+        let apple = existingApples.first(where: { $0.id == appleId })
+        apple?.state = "eaten"
+        return [apple ?? nil].compactMap({$0})
+    }
     
     func getApples(editCount: Int, createCount: Int, removeCount: Int) -> [JsonApple] {
         

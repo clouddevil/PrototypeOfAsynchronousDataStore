@@ -28,8 +28,8 @@ class ApplesModuleInteractor: ApplesModuleInteractorInput {
         self.applesService.unsubscribe(obj: key)
     }
 
-    func eatApple(_ index: Int) {
-
+    func eatApple(_ appleId: Int) {
+        self.applesService.eatApple(appleId)
     }
 
     func fetchApples(_ filter: AppleFilter) {

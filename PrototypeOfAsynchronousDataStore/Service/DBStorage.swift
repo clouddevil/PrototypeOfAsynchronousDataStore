@@ -10,8 +10,8 @@ import Foundation
 import Promises
 
 fileprivate let kInitialApplesDict: Dictionary<Int, Apple> = [
-    0: Apple(with: "Антоновка", color: .green, state: .onATree),
-    1: Apple(with: "Грушовка", color: .yellow, state: .needToEat)
+    0: Apple(0, with: "Антоновка", color: .green, state: .onATree),
+    1: Apple(1, with: "Грушовка", color: .yellow, state: .needToEat)
 ]
 
 
@@ -24,12 +24,10 @@ class DBStorage {
     
     func fetchApplesFromDb(by state: AppleState? = nil) -> Promise<[Apple]> {
         return Promise<[Apple]>(on: dbStorageSerialQueue) { [weak self] in
-            
             guard let strongSelf = self else {
                 fatalError()
             }
-            
-            sleepThread(time: 1)
+            sleepThread(time: 2);
             
             print("Fetching from db using filter: \(state?.rawValue ?? "Все")")
             
@@ -45,24 +43,38 @@ class DBStorage {
     }
     
     func syncApples(with jsonApples: [JsonApple]) -> Promise<Void> {
-        assert(!Thread.isMainThread)
-        
         return Promise<Void>(on: dbStorageSerialQueue) { [weak self] in
             
             guard let strongSelf = self else {
                 fatalError()
             }
-            
-            sleepThread(time: 1)
-            
-            //print("DB sync delay: \(delay)")
-            
+            sleepThread(time: 2);
+
             strongSelf.apples = [Int:Apple]()
             for apple in jsonApples {
-                strongSelf.apples[apple.id] = Apple(with: apple.title,
-                                                    color: apple.color,
-                                                    state: apple.state)
+                strongSelf.updateAppleSync(with: apple)
             }
         }
     }
+    
+    func updateApple(with jsonApple: JsonApple) -> Promise<Void> {
+        return Promise<Void>(on: dbStorageSerialQueue) { [weak self] in
+            guard let strongSelf = self else {
+                fatalError()
+            }
+            sleepThread(time: 2);
+            strongSelf.updateAppleSync(with: jsonApple)
+        }
+    }
+    
+    private func updateAppleSync(with jsonApple: JsonApple)
+    {
+        self.apples[jsonApple.id] = Apple(jsonApple.id,
+                                            with: jsonApple.title,
+                                            color: jsonApple.color,
+                                            state: jsonApple.state)
+    }
+    
+   
+    
 }

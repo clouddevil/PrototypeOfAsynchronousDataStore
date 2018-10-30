@@ -16,6 +16,15 @@ class NetworkStorage {
         return DispatchQueue(label: "com.someapp.networkStorage")
     }()
     
+    func eatNetworkApple(_ appleId: Int) -> Promise<[JsonApple]> {
+        return Promise<[JsonApple]>(on: networkStorageSerialQueue) { [weak self] in
+            guard let strongSelf = self else {
+                fatalError()
+            }
+            return strongSelf.applesCreator.eatApple(appleId)
+        }
+    }
+    
     func fetchFromNetwork() -> Promise<[JsonApple]> {
         return Promise<[JsonApple]>(on: networkStorageSerialQueue) { [weak self] in
             
@@ -23,12 +32,12 @@ class NetworkStorage {
                 fatalError()
             }
             
-            let delay = UInt32(randomInt(min: 1, max: 3))
+            let delay = UInt32(randomInt(min: 0, max: 3))
             print("Network fetching delay: \(delay)")
-            sleep(delay)
+            sleepThread(delay);
             
-            let added = randomInt(min: 0, max: 4)
-            let edited = randomInt(min: 0, max: 5)
+            let added = randomInt(min: 1, max: 4)
+            let edited = randomInt(min: 1, max: 5)
             let removed = randomInt(min: 0, max: 3)
             
             print("Added: \(added), edited: \(edited), removed: \(removed)")

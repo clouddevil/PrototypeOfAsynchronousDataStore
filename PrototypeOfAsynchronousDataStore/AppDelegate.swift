@@ -13,7 +13,11 @@ func randomInt(min: Int, max: Int) -> Int {
 }
 
 func sleepThread(time: Int) {
-    let delay = UInt32(randomInt(min: 0, max: time))
+    let delay = UInt32(randomInt(min: 0, max: 1000000 * time))
+    usleep(delay)
+}
+
+func sleepThread(_ delay: UInt32) {
     sleep(delay)
 }
 

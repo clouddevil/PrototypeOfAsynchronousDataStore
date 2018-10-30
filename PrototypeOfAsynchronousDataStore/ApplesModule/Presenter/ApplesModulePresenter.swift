@@ -22,8 +22,7 @@ class ApplesModulePresenter: ApplesModuleModuleInput, ApplesModuleViewOutput, Ap
     
     func eatApple(_ atIndex:Int)
     {
-        //view.disableApple()
-        self.interactor.eatApple(atIndex)
+        self.interactor.eatApple(self.obtainApple(atIndex).id)
     }
     
     func obtainApples(_ filter: AppleFilter) {

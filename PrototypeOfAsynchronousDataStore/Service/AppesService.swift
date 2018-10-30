@@ -40,16 +40,26 @@ class ApplesService {
     }
     
     func fetchApples() {
-        self.networkStorage.fetchFromNetwork().then { (_ jsonApples: [JsonApple]) -> Void in
+        self.networkStorage.fetchFromNetwork().then({ (_ jsonApples: [JsonApple]) -> Void in
             self.dbStorage.syncApples(with: jsonApples).then({
                 self.fetchDbApples()
             })
-        }
+        })
     }
     
     func fetchDbApplesWithFilter(_ filter: AppleFilter) {
         self.filter = filter
         fetchDbApples()
+    }
+    
+    func eatApple(_ appleId: Int) {
+        self.networkStorage.eatNetworkApple(appleId).then({ (_ jsonApples: [JsonApple]) -> Void in
+            for jsonApple in jsonApples {
+                self.dbStorage.updateApple(with: jsonApple).then({
+                    self.fetchDbApples()
+                })
+            }
+        })
     }
     
     func subscribeOnChanges(obj: AnyHashable, block: @escaping VoidBlock) {

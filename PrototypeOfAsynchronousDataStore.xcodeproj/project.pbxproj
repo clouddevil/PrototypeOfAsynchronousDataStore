@@ -27,7 +27,6 @@
 		CE13C2852152E7FF002D8B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE13C2842152E7FF002D8B35 /* Assets.xcassets */; };
 		CE13C2882152E7FF002D8B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE13C2862152E7FF002D8B35 /* LaunchScreen.storyboard */; };
 		CE13C2902152E841002D8B35 /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C28F2152E841002D8B35 /* Apple.swift */; };
-		CE13C2922152E9E5002D8B35 /* ApplesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C2912152E9E5002D8B35 /* ApplesStorage.swift */; };
 		CEA03CC52167035A001DB9F2 /* JsonApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA03CC42167035A001DB9F2 /* JsonApple.swift */; };
 		CED276B82152EC420008F912 /* DBStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED276B72152EC420008F912 /* DBStorage.swift */; };
 		CED276BA2152EC4C0008F912 /* NetworkStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED276B92152EC4C0008F912 /* NetworkStorage.swift */; };
@@ -72,7 +71,6 @@
 		CE13C2872152E7FF002D8B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE13C2892152E7FF002D8B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE13C28F2152E841002D8B35 /* Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
-		CE13C2912152E9E5002D8B35 /* ApplesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesStorage.swift; sourceTree = "<group>"; };
 		CEA03CC42167035A001DB9F2 /* JsonApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonApple.swift; sourceTree = "<group>"; };
 		CED276B72152EC420008F912 /* DBStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStorage.swift; sourceTree = "<group>"; };
 		CED276B92152EC4C0008F912 /* NetworkStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStorage.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				CE13C28F2152E841002D8B35 /* Apple.swift */,
 				CEFD319C215A007E00CC850D /* ApplesCreator.swift */,
 				CEA03CC42167035A001DB9F2 /* JsonApple.swift */,
-				CE13C2912152E9E5002D8B35 /* ApplesStorage.swift */,
 				CED276B72152EC420008F912 /* DBStorage.swift */,
 				CED276B92152EC4C0008F912 /* NetworkStorage.swift */,
 				61DAE8D6BF56450037DC013A /* AppesService.swift */,
@@ -401,7 +398,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE13C2922152E9E5002D8B35 /* ApplesStorage.swift in Sources */,
 				CE13C2902152E841002D8B35 /* Apple.swift in Sources */,
 				96910B132188C50300D836A3 /* AppleFilter.swift in Sources */,
 				CED276BA2152EC4C0008F912 /* NetworkStorage.swift in Sources */,
