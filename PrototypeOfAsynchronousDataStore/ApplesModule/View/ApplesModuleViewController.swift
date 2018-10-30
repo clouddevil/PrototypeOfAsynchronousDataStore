@@ -46,6 +46,10 @@ class ApplesModuleViewController: UIViewController, ApplesModuleViewInput {
         output.obtainApples(filter)
     }
     
+    @IBAction func eatButtonWasTaped(_ sender: Any) {
+         //output.eatApple()
+    }
+    
     @IBAction func refreshButtonWasTaped(_ sender: Any) {
         output.refreshApples()
     }

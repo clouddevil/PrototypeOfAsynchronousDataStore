@@ -12,4 +12,5 @@ class AppleCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var appleIcon: UIImageView!
     @IBOutlet weak var appleTitle: UILabel!
     @IBOutlet weak var appleDescription: UILabel!
+    @IBOutlet weak var btnEatIt: UIButton!
 }

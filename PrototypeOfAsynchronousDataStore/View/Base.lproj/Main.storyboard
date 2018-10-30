@@ -52,8 +52,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7W-PW-Yc3">
-                                                    <rect key="frame" x="67" y="34" width="286" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7W-PW-Yc3">
+                                                    <rect key="frame" x="67" y="34" width="160" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="8SU-CZ-7jU"/>
                                                         <constraint firstAttribute="width" constant="286" id="Asj-l9-drQ"/>
@@ -62,6 +62,15 @@
                                                     <color key="textColor" red="0.25882352939999997" green="0.28235294119999998" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAz-8o-XaA">
+                                                    <rect key="frame" x="253" y="34" width="102" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <state key="normal" title="Eat it!"/>
+                                                    <connections>
+                                                        <action selector="eatButtonWasTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wmZ-uj-dQe"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <constraints>
@@ -76,6 +85,7 @@
                                             <outlet property="appleDescription" destination="R7W-PW-Yc3" id="6fr-eh-fbU"/>
                                             <outlet property="appleIcon" destination="TLP-Qn-bf7" id="iGD-ux-AsT"/>
                                             <outlet property="appleTitle" destination="Z0h-HW-RHF" id="KNl-pr-RKb"/>
+                                            <outlet property="btnEatIt" destination="nAz-8o-XaA" id="dgW-bH-gWN"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

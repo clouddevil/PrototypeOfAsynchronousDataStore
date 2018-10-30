@@ -10,20 +10,21 @@ class ApplesModuleInteractor: ApplesModuleInteractorInput {
 
     weak var output: ApplesModuleInteractorOutput!
 
-    let key = "Unique key for this interactor"
-    
     var applesStorage: ApplesStorage!
     
     init(_ applesStorage:ApplesStorage!) {
         self.applesStorage = applesStorage
-        applesStorage.applesCollection.subscribeOnChanges(obj: self.key, block: {
+        
+        let key = String(describing: self)
+        applesStorage.applesCollection.subscribeOnChanges(obj: key, block: {
             [weak self] () -> Void in
             self?.output.applesDidFetched(self?.apples() ?? [])
         })
     }
     
     deinit {
-        self.applesStorage.applesCollection.unsubscribe(obj: self.key)
+        let key = String(describing: self)
+        self.applesStorage.applesCollection.unsubscribe(obj: key)
     }
     
     func fetchApples(_ filter: AppleFilter) {
