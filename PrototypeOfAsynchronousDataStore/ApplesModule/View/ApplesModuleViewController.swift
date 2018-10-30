@@ -46,10 +46,6 @@ class ApplesModuleViewController: UIViewController, ApplesModuleViewInput {
         output.obtainApples(filter)
     }
     
-    @IBAction func eatButtonWasTaped(_ sender: Any) {
-         //output.eatApple()
-    }
-    
     @IBAction func refreshButtonWasTaped(_ sender: Any) {
         output.refreshApples()
     }
@@ -64,14 +60,23 @@ extension ApplesModuleViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: AppleCollectionViewCell.self), for: indexPath) as! AppleCollectionViewCell
         
         // TODO: тут возоможна геренация другой обертки модели для view
-        let apple = self.output.obtainApple(indexPath.row)
+        
+        let appleIndex = indexPath.row
+        let apple = self.output.obtainApple(appleIndex)
         // Cell customization
         cell.appleTitle.text = apple.title
         cell.appleDescription.text = apple.state.rawValue
         cell.appleIcon.backgroundColor = apple.color.toUIColor()
         cell.appleIcon.layer.cornerRadius = cell.appleIcon.frame.width / 2
+        cell.btnEatItAction = { [unowned self] (Any) -> Void in
+            self.cellButtonPressed(appleIndex)
+        }
         
         return cell
+    }
+    
+    func cellButtonPressed(_ appleIndex: Int)  {
+        
     }
 }
 

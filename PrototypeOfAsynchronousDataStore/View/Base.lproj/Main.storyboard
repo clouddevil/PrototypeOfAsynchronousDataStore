@@ -68,7 +68,7 @@
                                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <state key="normal" title="Eat it!"/>
                                                     <connections>
-                                                        <action selector="eatButtonWasTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wmZ-uj-dQe"/>
+                                                        <action selector="buttonEatItPressed:" destination="aEM-zT-1Pe" eventType="touchUpInside" id="ufD-08-Eiu"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -85,7 +85,6 @@
                                             <outlet property="appleDescription" destination="R7W-PW-Yc3" id="6fr-eh-fbU"/>
                                             <outlet property="appleIcon" destination="TLP-Qn-bf7" id="iGD-ux-AsT"/>
                                             <outlet property="appleTitle" destination="Z0h-HW-RHF" id="KNl-pr-RKb"/>
-                                            <outlet property="btnEatIt" destination="nAz-8o-XaA" id="dgW-bH-gWN"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

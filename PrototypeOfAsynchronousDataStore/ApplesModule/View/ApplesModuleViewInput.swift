@@ -8,11 +8,6 @@
 
 protocol ApplesModuleViewInput: class {
 
-    /**
-        @author Eugene Kalinin
-        Setup initial state of the view
-    */
-
     func setupInitialState()
     
     func updateApples()

@@ -12,5 +12,11 @@ class AppleCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var appleIcon: UIImageView!
     @IBOutlet weak var appleTitle: UILabel!
     @IBOutlet weak var appleDescription: UILabel!
-    @IBOutlet weak var btnEatIt: UIButton!
+ 
+    var btnEatItAction: ((Any) -> Void)?
+    @IBAction func buttonEatItPressed(_ sender: Any) {
+        self.btnEatItAction?(sender)
+    }
+    
+    
 }

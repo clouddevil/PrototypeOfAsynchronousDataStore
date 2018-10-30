@@ -15,7 +15,6 @@
 		6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDEFC5310EC9DCAE75CCD7 /* ApplesModuleViewInput.swift */; };
 		774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */; };
 		8B31CE30B8B116BC4E9A5BEF /* Pods_PrototypeOfAsynchronousDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */; };
-		96298B3C217F2AF7005FE946 /* ApplesTyphoonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96298B3B217F2AF7005FE946 /* ApplesTyphoonAssembly.swift */; };
 		96298B3E217F2F0F005FE946 /* AppDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96298B3D217F2F0E005FE946 /* AppDelegateProxy.swift */; };
 		966B07CC217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */; };
 		966B07D4217E140700EE3363 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07D3217E140700EE3363 /* main.swift */; };
@@ -53,7 +52,6 @@
 		45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrototypeOfAsynchronousDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleModuleInput.swift; sourceTree = "<group>"; };
 		63766BEA1D2242188FDC426F /* ApplesModuleInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractor.swift; sourceTree = "<group>"; };
-		96298B3B217F2AF7005FE946 /* ApplesTyphoonAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesTyphoonAssembly.swift; sourceTree = "<group>"; };
 		96298B3D217F2F0E005FE946 /* AppDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateProxy.swift; sourceTree = "<group>"; };
 		966B07C9217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeOfAsynchronousDataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeOfAsynchronousDataStoreTests.swift; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 		E62477200C5F6BF29A8904ED /* ApplesModule */ = {
 			isa = PBXGroup;
 			children = (
-				96298B3B217F2AF7005FE946 /* ApplesTyphoonAssembly.swift */,
 				7C9B91866F6C4CCB3B9C82A1 /* View */,
 				0879B916713A14A884B938F7 /* Presenter */,
 				E8117C8C6731E36A086C5357 /* Interactor */,
@@ -431,7 +428,6 @@
 				CEA03CC52167035A001DB9F2 /* JsonApple.swift in Sources */,
 				CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */,
 				CED276BC2152F31F0008F912 /* ApplesCollection.swift in Sources */,
-				96298B3C217F2AF7005FE946 /* ApplesTyphoonAssembly.swift in Sources */,
 				CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */,
 				6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */,
 				34B04C6AB39EBBBBA8F0EF5A /* ApplesModuleViewOutput.swift in Sources */,
