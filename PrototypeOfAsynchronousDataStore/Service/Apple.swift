@@ -27,11 +27,6 @@ extension AppleColor {
     }
 }
 
-enum AppleState: String {
-    case onATree = "На дереве"
-    case needToEat = "Нужно съесть"
-    case eaten = "Съедено"
-}
 
 class Apple {
     var title: String = ""
@@ -70,6 +65,6 @@ class Apple {
             break
         }
         
-        self.init(with: title, color: colorRepresentation, state: stateRepresentation)
+        self.init( with: title, color: colorRepresentation, state: stateRepresentation)
     }
 }

@@ -18,7 +18,7 @@ func sleepThread(time: Int) {
 }
 
 //@UIApplicationMain
-class AppDelegate: AppDelegateHandler {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     

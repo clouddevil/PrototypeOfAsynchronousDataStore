@@ -14,14 +14,13 @@ fileprivate let kInitialApplesDict: Dictionary<Int, Apple> = [
     1: Apple(with: "Грушовка", color: .yellow, state: .needToEat)
 ]
 
+
 class DBStorage {
     
     private var apples: Dictionary<Int, Apple> = kInitialApplesDict
     private lazy var dbStorageSerialQueue: DispatchQueue = {
         return DispatchQueue(label: "com.someapp.dbStorage")
     }()
-    
-    
     
     func fetchApplesFromDb(by state: AppleState? = nil) -> Promise<[Apple]> {
         return Promise<[Apple]>(on: dbStorageSerialQueue) { [weak self] in

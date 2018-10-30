@@ -27,8 +27,9 @@ class ApplesModuleModuleConfigurator {
 
         // ApplesStorage -> ApplesService
         
-        let storage = ApplesStorage(networkStorage: NetworkStorage(), dbStorage: DBStorage())
-        let interactor = ApplesModuleInteractor(storage)
+        //let storage = ApplesStorage(networkStorage: NetworkStorage(), dbStorage: DBStorage())
+        let service = ApplesService(networkStorage: NetworkStorage(), dbStorage: DBStorage())
+        let interactor = ApplesModuleInteractor(service)
         
         interactor.output = presenter
 

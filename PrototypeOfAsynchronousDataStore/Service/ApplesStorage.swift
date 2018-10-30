@@ -9,23 +9,11 @@
 import Foundation
 import Promises
 
-enum AppleFilter : Int {
-    case all = 0
-    case needToEat
-    case eaten
-    case onATree
-}
 
 class ApplesStorage {
-    
-    var filter: AppleFilter = .all {
-        didSet {
-            fetchFromDbUsingFilter()
-        }
-    }
-    
-    private(set) var applesCollection = ApplesCollection()
-    
+    /*
+
+
     private var networkStorage: NetworkStorage
     private var dbStorage: DBStorage
     private var fetchingFromNetwork = false {
@@ -48,7 +36,7 @@ class ApplesStorage {
     }
     
     private func fetchFromDbUsingFilter() {
-        let appleState = appleStateForFetch()
+        //let appleState = appleStateForFetch()
         dbStorage.fetchApplesFromDb(by: appleState).then { [weak self] (apples) in
             
             assert(Thread.isMainThread)
@@ -58,7 +46,7 @@ class ApplesStorage {
             }
             
             print("Apples fetched from DB\n")
-            strongSelf.applesCollection.update(apples: apples)
+            //strongSelf.applesCollection.update(apples: apples)
         }
     }
     
@@ -98,7 +86,8 @@ class ApplesStorage {
             }
         })
     }
-    
+ */
+    /*
     private func appleStateForFetch() -> AppleState? {
         switch filter {
         case .eaten:
@@ -111,4 +100,5 @@ class ApplesStorage {
             return nil
         }
     }
+ */
 }

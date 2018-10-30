@@ -20,6 +20,12 @@ class ApplesModulePresenter: ApplesModuleModuleInput, ApplesModuleViewOutput, Ap
     var interactor: ApplesModuleInteractorInput!
     var router: ApplesModuleRouterInput!
     
+    func eatApple(_ atIndex:Int)
+    {
+        //view.disableApple()
+        self.interactor.eatApple(atIndex)
+    }
+    
     func obtainApples(_ filter: AppleFilter) {
         self.interactor.fetchApples(filter)
     }

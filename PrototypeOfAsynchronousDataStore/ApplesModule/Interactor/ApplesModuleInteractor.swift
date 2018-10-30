@@ -10,33 +10,37 @@ class ApplesModuleInteractor: ApplesModuleInteractorInput {
 
     weak var output: ApplesModuleInteractorOutput!
 
-    var applesStorage: ApplesStorage!
+    let key = String(describing: ApplesModuleInteractor.self)
     
-    init(_ applesStorage:ApplesStorage!) {
-        self.applesStorage = applesStorage
+    var applesService: ApplesService!
+
+    init(_ applesService: ApplesService!) {
+        self.applesService = applesService
         
-        let key = String(describing: self)
-        applesStorage.applesCollection.subscribeOnChanges(obj: key, block: {
+        self.applesService.subscribeOnChanges(obj: key, block: {
             [weak self] () -> Void in
-            self?.output.applesDidFetched(self?.apples() ?? [])
+            guard let strongSelf = self else { return }
+            strongSelf.output.applesDidFetched(strongSelf.apples())
         })
     }
-    
+
     deinit {
-        let key = String(describing: self)
-        self.applesStorage.applesCollection.unsubscribe(obj: key)
+        self.applesService.unsubscribe(obj: key)
     }
-    
+
+    func eatApple(_ index: Int) {
+
+    }
+
     func fetchApples(_ filter: AppleFilter) {
-        applesStorage.filter = filter
+        self.applesService.fetchDbApplesWithFilter(filter)
     }
-    
-    func refreshApples()
-    {
-       applesStorage.fetchApples()
+
+    func refreshApples() {
+        self.applesService.fetchApples()
     }
-    
+
     func apples() -> [Apple] {
-        return self.applesStorage.applesCollection.apples
+        return self.applesService.apples
     }
 }

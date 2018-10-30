@@ -68,16 +68,12 @@ extension ApplesModuleViewController: UICollectionViewDataSource {
         cell.appleDescription.text = apple.state.rawValue
         cell.appleIcon.backgroundColor = apple.color.toUIColor()
         cell.appleIcon.layer.cornerRadius = cell.appleIcon.frame.width / 2
-        cell.btnEatItAction = { [unowned self] (Any) -> Void in
-            self.cellButtonPressed(appleIndex)
+        cell.btnEatItAction = { [unowned self, appleIndex] (Any) -> Void in
+            self.output.eatApple(appleIndex)
         }
-        
         return cell
     }
-    
-    func cellButtonPressed(_ appleIndex: Int)  {
-        
-    }
+
 }
 
 extension ApplesModuleViewController: UITabBarDelegate {

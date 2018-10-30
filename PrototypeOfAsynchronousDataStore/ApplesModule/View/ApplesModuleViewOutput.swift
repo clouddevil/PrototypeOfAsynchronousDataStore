@@ -10,6 +10,8 @@ protocol ApplesModuleViewOutput {
 
     var appleCount: Int! { get }
     func obtainApple(_ atIndex:Int) -> Apple // TODO: View::AppleDesc
+    
+    func eatApple(_ atIndex:Int)
   
     func refreshApples()
     func obtainApples(_ filter:AppleFilter) // TODO: View::FilterDesc

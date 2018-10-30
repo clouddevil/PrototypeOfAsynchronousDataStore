@@ -10,6 +10,7 @@ import Foundation
 
 protocol ApplesModuleInteractorInput {
 
+    func eatApple(_ index: Int)
     func refreshApples()
     func fetchApples(_ filter: AppleFilter)
 }

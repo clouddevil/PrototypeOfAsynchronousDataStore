@@ -12,12 +12,14 @@
 		34B04C6AB39EBBBBA8F0EF5A /* ApplesModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F1BA494C00526695AB3D3 /* ApplesModuleViewOutput.swift */; };
 		39CD23FD46D26DD39F995E24 /* ApplesModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */; };
 		6160AED6405A9C43EC112709 /* ApplesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83FBCA939121B1ACFBF39C /* ApplesModuleRouter.swift */; };
+		61DAECC1D9AB8DFE52D173CE /* AppesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DAE8D6BF56450037DC013A /* AppesService.swift */; };
 		6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDEFC5310EC9DCAE75CCD7 /* ApplesModuleViewInput.swift */; };
 		774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */; };
 		8B31CE30B8B116BC4E9A5BEF /* Pods_PrototypeOfAsynchronousDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */; };
-		96298B3E217F2F0F005FE946 /* AppDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96298B3D217F2F0E005FE946 /* AppDelegateProxy.swift */; };
 		966B07CC217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */; };
 		966B07D4217E140700EE3363 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966B07D3217E140700EE3363 /* main.swift */; };
+		96910B132188C50300D836A3 /* AppleFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96910B122188C50300D836A3 /* AppleFilter.swift */; };
+		96910B152188CE3700D836A3 /* AppleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96910B142188CE3700D836A3 /* AppleState.swift */; };
 		CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE074B4D215C32EC0096B882 /* AppleCollectionViewCell.swift */; };
 		CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27D2152E7FE002D8B35 /* AppDelegate.swift */; };
 		CE13C2802152E7FE002D8B35 /* ApplesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13C27F2152E7FE002D8B35 /* ApplesModuleViewController.swift */; };
@@ -29,7 +31,6 @@
 		CEA03CC52167035A001DB9F2 /* JsonApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA03CC42167035A001DB9F2 /* JsonApple.swift */; };
 		CED276B82152EC420008F912 /* DBStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED276B72152EC420008F912 /* DBStorage.swift */; };
 		CED276BA2152EC4C0008F912 /* NetworkStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED276B92152EC4C0008F912 /* NetworkStorage.swift */; };
-		CED276BC2152F31F0008F912 /* ApplesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED276BB2152F31F0008F912 /* ApplesCollection.swift */; };
 		CEFD319D215A007E00CC850D /* ApplesCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD319C215A007E00CC850D /* ApplesCreator.swift */; };
 		E8AF5DB37DE992599DAA528B /* ApplesModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297A61F25F5F7424C661387 /* ApplesModuleRouterInput.swift */; };
 		F3F02F51F1DD5782506A9D27 /* ApplesModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613AE0B480004758151808A /* ApplesModuleInteractorOutput.swift */; };
@@ -51,12 +52,14 @@
 		2B83FBCA939121B1ACFBF39C /* ApplesModuleRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleRouter.swift; sourceTree = "<group>"; };
 		45C54E6CD59CAD7FFA933DDF /* Pods_PrototypeOfAsynchronousDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrototypeOfAsynchronousDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleModuleInput.swift; sourceTree = "<group>"; };
+		61DAE8D6BF56450037DC013A /* AppesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppesService.swift; sourceTree = "<group>"; };
 		63766BEA1D2242188FDC426F /* ApplesModuleInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractor.swift; sourceTree = "<group>"; };
-		96298B3D217F2F0E005FE946 /* AppDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateProxy.swift; sourceTree = "<group>"; };
 		966B07C9217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeOfAsynchronousDataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeOfAsynchronousDataStoreTests.swift; sourceTree = "<group>"; };
 		966B07CD217E110700EE3363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966B07D3217E140700EE3363 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ApplesSrc/main.swift; sourceTree = SOURCE_ROOT; };
+		96910B122188C50300D836A3 /* AppleFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFilter.swift; sourceTree = "<group>"; };
+		96910B142188CE3700D836A3 /* AppleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleState.swift; sourceTree = "<group>"; };
 		A7D830F913BA0A919D30FD65 /* ApplesModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModulePresenter.swift; sourceTree = "<group>"; };
 		C1EBAA97ED19CEE0FE5F42AD /* ApplesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleConfigurator.swift; sourceTree = "<group>"; };
 		C6AA40CE5857CA4FE0FC6DC8 /* Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrototypeOfAsynchronousDataStore/Pods-PrototypeOfAsynchronousDataStore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		CEA03CC42167035A001DB9F2 /* JsonApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonApple.swift; sourceTree = "<group>"; };
 		CED276B72152EC420008F912 /* DBStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStorage.swift; sourceTree = "<group>"; };
 		CED276B92152EC4C0008F912 /* NetworkStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStorage.swift; sourceTree = "<group>"; };
-		CED276BB2152F31F0008F912 /* ApplesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesCollection.swift; sourceTree = "<group>"; };
 		CEFD319C215A007E00CC850D /* ApplesCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesCreator.swift; sourceTree = "<group>"; };
 		D297A61F25F5F7424C661387 /* ApplesModuleRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleRouterInput.swift; sourceTree = "<group>"; };
 		E613AE0B480004758151808A /* ApplesModuleInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractorOutput.swift; sourceTree = "<group>"; };
@@ -167,21 +169,17 @@
 		966B07D5217E237100EE3363 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				966B07D6217E23C200EE3363 /* Storage */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		966B07D6217E23C200EE3363 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
+				CE13C28F2152E841002D8B35 /* Apple.swift */,
 				CEFD319C215A007E00CC850D /* ApplesCreator.swift */,
 				CEA03CC42167035A001DB9F2 /* JsonApple.swift */,
 				CE13C2912152E9E5002D8B35 /* ApplesStorage.swift */,
 				CED276B72152EC420008F912 /* DBStorage.swift */,
 				CED276B92152EC4C0008F912 /* NetworkStorage.swift */,
+				61DAE8D6BF56450037DC013A /* AppesService.swift */,
+				96910B122188C50300D836A3 /* AppleFilter.swift */,
+				96910B142188CE3700D836A3 /* AppleState.swift */,
 			);
-			path = Storage;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CE13C2712152E7FE002D8B35 = {
@@ -207,13 +205,11 @@
 		CE13C27C2152E7FE002D8B35 /* PrototypeOfAsynchronousDataStore */ = {
 			isa = PBXGroup;
 			children = (
-				CEA03CC921674745001DB9F2 /* Model */,
 				CEA03CC821674729001DB9F2 /* View */,
 				966B07D5217E237100EE3363 /* Service */,
 				E62477200C5F6BF29A8904ED /* ApplesModule */,
 				CE13C27D2152E7FE002D8B35 /* AppDelegate.swift */,
 				966B07D3217E140700EE3363 /* main.swift */,
-				96298B3D217F2F0E005FE946 /* AppDelegateProxy.swift */,
 				CE13C2842152E7FF002D8B35 /* Assets.xcassets */,
 				CE13C2892152E7FF002D8B35 /* Info.plist */,
 			);
@@ -227,15 +223,6 @@
 				CE13C2812152E7FE002D8B35 /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		CEA03CC921674745001DB9F2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CE13C28F2152E841002D8B35 /* Apple.swift */,
-				CED276BB2152F31F0008F912 /* ApplesCollection.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E62477200C5F6BF29A8904ED /* ApplesModule */ = {
@@ -388,15 +375,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PrototypeOfAsynchronousDataStore/Pods-PrototypeOfAsynchronousDataStore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
-				"${BUILT_PRODUCTS_DIR}/RamblerAppDelegateProxy/RamblerAppDelegateProxy.framework",
-				"${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RamblerAppDelegateProxy.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -420,6 +403,7 @@
 			files = (
 				CE13C2922152E9E5002D8B35 /* ApplesStorage.swift in Sources */,
 				CE13C2902152E841002D8B35 /* Apple.swift in Sources */,
+				96910B132188C50300D836A3 /* AppleFilter.swift in Sources */,
 				CED276BA2152EC4C0008F912 /* NetworkStorage.swift in Sources */,
 				CEFD319D215A007E00CC850D /* ApplesCreator.swift in Sources */,
 				CED276B82152EC420008F912 /* DBStorage.swift in Sources */,
@@ -427,19 +411,19 @@
 				966B07D4217E140700EE3363 /* main.swift in Sources */,
 				CEA03CC52167035A001DB9F2 /* JsonApple.swift in Sources */,
 				CE13C27E2152E7FE002D8B35 /* AppDelegate.swift in Sources */,
-				CED276BC2152F31F0008F912 /* ApplesCollection.swift in Sources */,
 				CE074B4E215C32EC0096B882 /* AppleCollectionViewCell.swift in Sources */,
 				6E75C8CC0B7FB61EBA1BA55E /* ApplesModuleViewInput.swift in Sources */,
 				34B04C6AB39EBBBBA8F0EF5A /* ApplesModuleViewOutput.swift in Sources */,
 				39CD23FD46D26DD39F995E24 /* ApplesModuleModuleInput.swift in Sources */,
-				96298B3E217F2F0F005FE946 /* AppDelegateProxy.swift in Sources */,
 				1967310E5FB465D734B85C33 /* ApplesModulePresenter.swift in Sources */,
 				17A19E51765B652C9338D80B /* ApplesModuleInteractorInput.swift in Sources */,
 				F3F02F51F1DD5782506A9D27 /* ApplesModuleInteractorOutput.swift in Sources */,
 				FF7770A1CA5B05132909F26F /* ApplesModuleInteractor.swift in Sources */,
 				E8AF5DB37DE992599DAA528B /* ApplesModuleRouterInput.swift in Sources */,
+				96910B152188CE3700D836A3 /* AppleState.swift in Sources */,
 				6160AED6405A9C43EC112709 /* ApplesModuleRouter.swift in Sources */,
 				774C2EF12BA5C1EE903C5B3B /* ApplesModuleConfigurator.swift in Sources */,
+				61DAECC1D9AB8DFE52D173CE /* AppesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

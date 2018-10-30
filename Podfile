@@ -8,7 +8,7 @@ target 'PrototypeOfAsynchronousDataStore' do
   # Pods for PrototypeOfAsynchronousDataStore
   pod 'PromisesSwift', '~> 1.0.6'
   
-  pod 'Typhoon'
-  pod 'RamblerAppDelegateProxy'
+  #pod 'Typhoon'
+  #pod 'RamblerAppDelegateProxy'
   
 end
