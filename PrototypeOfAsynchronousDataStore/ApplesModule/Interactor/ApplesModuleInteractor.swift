@@ -20,7 +20,7 @@ class ApplesModuleInteractor: ApplesModuleInteractorInput {
         self.applesService.subscribeOnChanges(obj: key, block: {
             [weak self] () -> Void in
             guard let strongSelf = self else { return }
-            strongSelf.output.applesDidFetched(strongSelf.apples())
+            strongSelf.output.applesDidFetch(strongSelf.apples())
         })
     }
 

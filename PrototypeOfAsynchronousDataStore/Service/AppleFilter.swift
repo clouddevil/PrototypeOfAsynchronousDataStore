@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AppleFilter : Int {
+enum AppleFilter: Int {
     case all = 0
     case needToEat
     case eaten

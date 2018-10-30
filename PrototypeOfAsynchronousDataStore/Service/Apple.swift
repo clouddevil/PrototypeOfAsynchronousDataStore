@@ -33,16 +33,16 @@ class Apple {
     var title: String = ""
     var color: AppleColor = .green
     var state: AppleState = .onATree
-    
-    required init(_ id:Int, with title: String, color: AppleColor, state: AppleState) {
+
+    required init(_ id: Int, with title: String, color: AppleColor, state: AppleState) {
         self.id = id
         self.title = title
         self.color = color
         self.state = state
     }
-    
+
     convenience init(_ id: Int, with title: String, color: String, state: String) {
-        
+
         var colorRepresentation = AppleColor.green
         switch color {
         case "green":
@@ -54,7 +54,7 @@ class Apple {
         default:
             break
         }
-        
+
         var stateRepresentation = AppleState.eaten
         switch state {
         case "eaten":
@@ -66,7 +66,7 @@ class Apple {
         default:
             break
         }
-        
+
         self.init(id, with: title, color: colorRepresentation, state: stateRepresentation)
     }
 }

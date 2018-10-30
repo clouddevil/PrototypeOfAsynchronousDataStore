@@ -25,12 +25,12 @@ func sleepThread(_ delay: UInt32) {
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-  
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+
         // Override point for customization after application launch.
-        
+
         let configurator = ApplesModuleModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: self.window?.rootViewController!)
         return true

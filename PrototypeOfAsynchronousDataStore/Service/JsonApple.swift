@@ -13,7 +13,7 @@ class JsonApple {
     var title: String
     var color: String
     var state: String
-    
+
     required init(appleId: Int, title: String, color: String, state: String) {
         self.id = appleId
         self.title = title
