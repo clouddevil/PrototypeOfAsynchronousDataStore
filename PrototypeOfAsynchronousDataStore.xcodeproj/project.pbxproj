@@ -53,6 +53,7 @@
 		51AB9AFC7032F3F04AE8B3C3 /* ApplesModuleModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleModuleInput.swift; sourceTree = "<group>"; };
 		61DAE8D6BF56450037DC013A /* AppesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppesService.swift; sourceTree = "<group>"; };
 		63766BEA1D2242188FDC426F /* ApplesModuleInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplesModuleInteractor.swift; sourceTree = "<group>"; };
+		9647F8C72189FEDD0046CE33 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = PrototypeOfAsynchronousDataStore/MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		966B07C9217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeOfAsynchronousDataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966B07CB217E110700EE3363 /* PrototypeOfAsynchronousDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeOfAsynchronousDataStoreTests.swift; sourceTree = "<group>"; };
 		966B07CD217E110700EE3363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 		966B07D5217E237100EE3363 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9647F8C72189FEDD0046CE33 /* MyPlayground.playground */,
 				CE13C28F2152E841002D8B35 /* Apple.swift */,
 				CEFD319C215A007E00CC850D /* ApplesCreator.swift */,
 				CEA03CC42167035A001DB9F2 /* JsonApple.swift */,

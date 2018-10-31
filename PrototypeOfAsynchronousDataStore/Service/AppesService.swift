@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import Promises
 
 typealias VoidBlock = () -> Void
 
@@ -40,11 +41,13 @@ class ApplesService {
     }
 
     func fetchApples() {
-        self.networkStorage.fetchFromNetwork().then({ (_ jsonApples: [JsonApple]) -> Void in
-            self.dbStorage.syncApples(with: jsonApples).then({
-                self.fetchDbApples()
+        let jsonApplesPromise = self.networkStorage.fetchFromNetwork()
+        let savedApplesPromise = jsonApplesPromise.then({ [weak self] (_ jsonApples: [JsonApple]) in
+                return self?.dbStorage.syncApples(with: jsonApples)
             })
-        })
+        savedApplesPromise.then({ [weak self] (_) -> Void in
+                self?.fetchDbApples()
+            })
     }
 
     func fetchDbApplesWithFilter(_ filter: AppleFilter) {
@@ -53,13 +56,25 @@ class ApplesService {
     }
 
     func eatApple(_ appleId: Int) {
-        self.networkStorage.eatNetworkApple(appleId).then({ (_ jsonApples: [JsonApple]) -> Void in
-            for jsonApple in jsonApples {
-                self.dbStorage.updateApple(with: jsonApple).then({
-                    self.fetchDbApples()
-                })
+        self.networkStorage.eatNetworkApple(appleId).then({ [weak self]  (_ jsonApples: [JsonApple]) -> Promise<Void> in
+            guard let `self` = self else {
+                //throw Error("")
+                throw NSError(domain: "", code: 0, userInfo: nil)
+                //reject()
             }
+            let allPromises = all(jsonApples.map({ (_ jsonApple: JsonApple) in
+                return self.dbStorage.updateApple(with: jsonApple)
+            }))
+
+            return allPromises.then({ _ -> Void in
+                return ()
+            })
+           
+        }).then({ [weak self] (_) in
+            self?.fetchDbApples()
         })
+        
+        
     }
 
     func subscribeOnChanges(obj: AnyHashable, block: @escaping VoidBlock) {

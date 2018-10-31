@@ -17,7 +17,7 @@ class NetworkStorage {
     }()
 
     func eatNetworkApple(_ appleId: Int) -> Promise<[JsonApple]> {
-        return Promise<[JsonApple]>(on: networkStorageSerialQueue) { [weak self] in
+        return Promise<[JsonApple]>(on: networkStorageSerialQueue) { [weak self] () -> [JsonApple] in
             guard let strongSelf = self else {
                 fatalError()
             }
@@ -26,7 +26,7 @@ class NetworkStorage {
     }
 
     func fetchFromNetwork() -> Promise<[JsonApple]> {
-        return Promise<[JsonApple]>(on: networkStorageSerialQueue) { [weak self] in
+        return Promise<[JsonApple]>(on: networkStorageSerialQueue) { [weak self] () -> [JsonApple] in
 
             guard let strongSelf = self else {
                 fatalError()

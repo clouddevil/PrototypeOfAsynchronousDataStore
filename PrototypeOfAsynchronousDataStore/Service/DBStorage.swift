@@ -23,7 +23,7 @@ class DBStorage {
     }()
 
     func fetchApplesFromDb(by state: AppleState? = nil) -> Promise<[Apple]> {
-        return Promise<[Apple]>(on: dbStorageSerialQueue) { [weak self] in
+        return Promise<[Apple]>(on: dbStorageSerialQueue) { [weak self] () -> [Apple] in
             guard let strongSelf = self else {
                 fatalError()
             }
